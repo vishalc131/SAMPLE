@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function validate(){
+            if(document.myform.usn.value == "" ) {
+           alert( "Please provide your USN!" );
+           document.myForm.usn.focus() ;
+           return false;
+        }
+        if(document.myForm.firstname.value == "" ) {
+           alert( "Please provide your NAME!" );
+           document.myForm.firstname.focus() ;
+           return false;
+        }
+        return true;
+        }
+        </script>
+    </head>
+    <body>
+        <form action="" name="myform" onsubmit="return(validate());">
+            <label>USN</label>
+            <input type="text" name="usn"><br>
+            <label>Name</label>
+            <input type="text" name="firstname"><br>
+            <label>MOB NUMBER</label>
+            <input type="number" name="mob"><br>
+            <label>GENDER</label>
+            <input type="radio" name="rad" value="MALE">
+            <input type="radio" name="rad" value="FEMALE"><br>
+            <button type="submit">SUBMIT</button>
+            
+
+
+        </form>
+    </body>
+</html>
